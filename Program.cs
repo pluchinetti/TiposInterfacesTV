@@ -19,6 +19,10 @@ namespace Adapter
             ISmartRemote srem = new SmartRemote();
             srem.StartNetflix(stv);
             srem.StartYouTube(stv);
+
+            GermanTV gtv = new GermanTV();
+            rem.TurnOnTV(gtv);
+            rem.TurnOffTV(gtv);
         }
 
     }
