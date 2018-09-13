@@ -2,21 +2,18 @@ namespace Adapter
 {
     class GermanAdapter: ITV
     {
-        private GermanTV germanTV;
-
         public bool Status
         {
             get
             {
                 if (germanTV.Status=="eingeschaltet")
-                    return false;
-                else
                     return true;
+                else
+                    return false;
             }
             
         }
-        private GermanTV GermanTV;
-
+        private GermanTV germanTV;
         public GermanAdapter(GermanTV germanTV)
         {
             this.germanTV = germanTV;

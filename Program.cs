@@ -21,8 +21,9 @@ namespace Adapter
             srem.StartYouTube(stv);
 
             GermanTV gtv = new GermanTV();
-            rem.TurnOnTV(gtv);
-            rem.TurnOffTV(gtv);
+            GermanAdapter geradapt = new GermanAdapter(gtv);
+            rem.TurnOnTV(geradapt);
+            rem.TurnOffTV(geradapt);
         }
 
     }
